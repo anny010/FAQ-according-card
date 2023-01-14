@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 32px;
+    line-height: 39.69px;
+    font-weight: 700;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+h2{
+    font-size: 13px;
+    line-height: 16.12px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(75, 76, 95, 1);
+    cursor: pointer;
+}
+h2:hover{
+    color: rgba(244, 123, 86, 1);
+}
+p{
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(75, 76, 95, 1);
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+.textbox{
+    width: 327px;
+    height: 535px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 50px 50px -20px rgb(53 18 122 / 50%);
+    padding-top: 132px;
+}
+.box{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    justify-content: center;
+}
+.mobile-img{
+    width: 237px;
+    height: 180px;
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
+    margin-left: 50px;
+}
+.shadow{
+    width: 240px;
+    height: 145px;
+    position: absolute;
+    margin-top: 180px;
+    top: 0;
+    margin-left: 50px;
+}
+.line{
+    background-color: rgba(232, 232, 234, 1);
+    width: 279px;
+    height: 1px;
+}
+.arrow{
+    cursor: pointer;
+}
+.arrowUp{
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.answer{
+    text-align: left;
+    padding: 15px 25px;
+    display: none;
+}
+.active{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17.36px;
+    color: rgba(30, 31, 54, 1);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.imgbox{
+    display: none;
+}
+.desktopimg{
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .textbox{
+        width: 920px;
+        height: 509px;
+        display: flex;
+        gap: 80px;
+        text-align: left;
+        overflow-x: hidden;
+        padding: 0;
+        padding-top: 80px;
+    }
+    .whitebox{
+        width: 350px;
+    }
+    h2{
+        font-size: 14px;
+        line-height: 17.36px;
+    }
+    p{
+        font-size: 14px;
+        line-height: 17.36px;
+    }
+    .mobile-img{
+        display: none;
+    }
+    .shadow{
+        display: none;
+    }
+    .question{
+        padding: 15px 0px;
+    }
+    .desktopimg{
+        display: block;
+        padding-top: 20px;
+        margin: -50px -30px auto;
+    }
+    .answer{
+        padding: 15px 0px;
+    }
+    .imgbox{
+        display: block;
+        position: absolute;
+        transform: translate(-93px, 100px );
+        z-index: 1;
+    }
+}
